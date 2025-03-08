@@ -1,0 +1,12 @@
+/* Photo Detection Page */
+.photo-container {
+    margin-top: 80px;
+}
+
+.photo-canvas {
+    width: 100%;
+    max-width: 500px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 15px;
+}

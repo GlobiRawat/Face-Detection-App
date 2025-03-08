@@ -1,0 +1,56 @@
+/* NavHeader.css */
+
+/* Custom Navbar Styling */
+.navbar.navbar-custom {
+    background: linear-gradient(135deg, #f3cc2b, #f48e22); /* Vibrant gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More defined shadow */
+    padding: 12px 20px;
+}
+
+/* Navbar Brand Styling */
+.navbar.navbar-custom .navbar-brand {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.navbar.navbar-custom .navbar-brand:hover {
+    opacity: 0.8; /* Smooth hover effect */
+}
+
+/* Navbar Links Styling */
+.navbar.navbar-custom .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0 12px;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar.navbar-custom .nav-link:hover {
+    color: #007bffac; /* Change text to blue on hover */
+    opacity: 1;
+}
+
+/* Active Link Styling */
+.navbar.navbar-custom .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+.navbar.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .navbar.navbar-custom .navbar-nav {
+        background: linear-gradient(135deg, #f3cc2b, #f48e22);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .navbar.navbar-custom .nav-link {
+        margin: 5px 0;
+    }
+}

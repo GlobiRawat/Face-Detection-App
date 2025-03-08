@@ -1,0 +1,67 @@
+/* General styles for the homepage */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Use a clean font */
+    position: relative; /* Required for positioning the translucent box */
+}
+
+/* Translucent yellow box */
+.home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(248, 223, 2, 0.454); /* More translucent yellow background */
+    z-index: 1; /* Place it behind the content */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Add some margin */
+}
+
+/* Content inside the translucent box */
+.home-container > * {
+    position: relative;
+    z-index: 2; /* Ensure content is above the translucent box */
+    color: white; /* White text */
+    text-align: center; /* Center-align text */
+    max-width: 800px; /* Limit width for better readability */
+    padding: 20px; /* Add padding to the content */
+}
+
+/* Title styling */
+.title {
+    font-size: 2.5rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+/* Description styling */
+.description {
+    font-size: 1.2rem; /* Medium font size */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 30px; /* Spacing below the description */
+}
+
+/* Features list styling */
+.features {
+    font-size: 1.1rem; /* Slightly smaller font size */
+    line-height: 1.8; /* Improve readability */
+    margin-bottom: 30px; /* Spacing below the features */
+}
+
+.features p {
+    margin: 10px 0; /* Spacing between feature items */
+}
+
+/* Footer text styling */
+.footer-text {
+    font-size: 1rem; /* Smaller font size */
+    font-style: italic; /* Italic text */
+    margin-top: 20px; /* Spacing above the footer text */
+}

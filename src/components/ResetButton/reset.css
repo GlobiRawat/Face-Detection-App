@@ -1,0 +1,15 @@
+.reset-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #bf6d10;
+}
